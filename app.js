@@ -9,7 +9,7 @@ const rl = readline.createInterface({
 })
 rl.question('Masukan nama file (txt) : ', (nama) => {
   rl.question('Masukan isi file : ', (isiFile) => {
-    fs.writeFile(`${nama}.txt`, `${isiFile}`, (e) => {
+    fs.writeFile(`data/${nama}.txt`, `${isiFile}`, (e) => {
       console.log(e)
     })
     rl.close()
